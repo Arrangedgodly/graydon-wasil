@@ -3,7 +3,7 @@ import {AiOutlineLinkedin} from 'react-icons/ai'
 
 const Footer = () => {
   return (
-    <footer className="footer items-center p-4 text-neutral-content">
+    <footer className="footer items-center p-4 text-neutral-content fixed bottom-0 left-0 z-50">
       <div className="items-center grid-flow-col">
         <p>Copyright © 2023 Graydon Wasil - All right reserved</p>
       </div>
