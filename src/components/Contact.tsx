@@ -1,10 +1,9 @@
-const Contact = ({ reference }) => {
+const Contact = () => {
   return (
     <div
       className="flex flex-grow flex-col items-center justify-center h-screen"
       data-aos="fade-up"
       id="contact"
-      ref={reference}
     >
       <h1 className="text-4xl font-bold p-4" data-aos='fade-down'>Contact Me</h1>
       <div className="card shadow-xl bg-secondary p-5 rounded-box rounded-lg w-96" data-aos='fade-up'>

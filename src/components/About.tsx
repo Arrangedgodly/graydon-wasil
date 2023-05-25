@@ -1,10 +1,9 @@
-const About = ({ reference }) => {
+const About = () => {
   return (
     <div
       className="flex flex-grow flex-col items-center justify-center h-screen"
       data-aos="fade-up"
       id="about"
-      ref={reference}
     >
       <h1 className="text-4xl font-bold p-4" data-aos='fade-left'>About Me</h1>
       <p className="text-xl max-w-[50%] text-center p-4" data-aos='fade-right'>

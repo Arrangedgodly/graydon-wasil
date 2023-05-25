@@ -20,6 +20,9 @@ const Header = () => {
           <a className="btn btn-ghost btn-md rounded-box" href="#about">
             About
           </a>
+          <a className="btn btn-ghost btn-md rounded-box" href="#tools">
+            Tools
+          </a>
           <a className="btn btn-ghost btn-md rounded-box" href="#contact">
             Contact
           </a>

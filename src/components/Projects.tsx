@@ -7,10 +7,8 @@ const Projects = () => {
   return (
     <div
       className="flex flex-grow flex-col items-center justify-center h-screen"
-      data-aos="fade-down"
       id="projects"
     >
-      <h1 className="text-4xl font-bold p-4" data-aos='fade-down'>Projects</h1>
       <div className="carousel w-full">
         <div
           id="slide1"
@@ -23,7 +21,10 @@ const Projects = () => {
             live="https://rhymebook.graydonwasil.com/"
             code="https://github.com/Arrangedgodly/rhymebook-chakra"
           />
-          <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2" data-aos='fade-up'>
+          <div
+            className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            data-aos="fade-up"
+          >
             <a href="#slide3" className="btn btn-circle">
               ❮
             </a>
