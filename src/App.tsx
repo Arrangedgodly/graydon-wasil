@@ -6,9 +6,11 @@ import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { useEffect } from "react"
+import { useState, useEffect } from "react"
+import 'theme-change';
 
 const App = () => {
+  const [theme, setTheme] = useState('business');
   useEffect(() => {
     AOS.init({
       duration : 2000,
@@ -28,13 +30,13 @@ const App = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center min-h-screen p-0 scroll-smooth overflow-hidden">
+    <div className="flex flex-col items-center min-h-screen p-0 scroll-smooth bg-base-300 text-neutral-content" data-theme={theme}>
       <Header />
       <Projects />
       <About />
       <Tools />
       <Contact />
-      <Footer />
+      <Footer setTheme={setTheme} />
     </div>
   )
 }

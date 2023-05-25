@@ -36,7 +36,7 @@ const Tools = () => {
       <h1 className="text-4xl font-bold p-4" data-aos="flip-right">
         Tools
       </h1>
-      <div className="grid grid-cols-5 gap-5">
+      <div className="grid grid-cols-5 gap-7">
         <Tool
           icon={<SiTailwindcss size='5rem' />}
           link="https://tailwindcss.com/"

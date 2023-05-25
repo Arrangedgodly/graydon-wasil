@@ -12,6 +12,7 @@ const Tool: React.FC<ToolProps> = ({link, icon, animation}) => {
       target="_blank"
       rel="noreferrer"
       data-aos={animation}
+      data-aos-delay='750'
     >
       {icon}
     </a>

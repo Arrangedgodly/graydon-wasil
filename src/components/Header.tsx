@@ -2,10 +2,10 @@ import HeaderLogo from "../assets/graydonwasil.png";
 
 const Header = () => {
   return (
-    <div className="navbar bg-base-100 fixed top-0 left-0 z-50">
+    <div className="navbar bg-base-300 fixed top-0 left-0 z-50">
       <div className="navbar-start"></div>
       <div className="navbar-center flex-col">
-        <a className="btn btn-ghost btn-lg rounded-box min-h-[6rem]" href="/">
+        <a className="btn btn-ghost btn-lg rounded-box min-h-[6rem] italic font-bold" href="/">
           <img
             src={HeaderLogo}
             alt="GraydonWasil.com logo"

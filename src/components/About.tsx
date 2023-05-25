@@ -1,7 +1,7 @@
 const About = () => {
   return (
     <div
-      className="flex flex-grow flex-col items-center justify-center h-screen"
+      className="flex flex-grow flex-col items-center justify-center h-screen bg-base-300"
       data-aos="fade-up"
       id="about"
     >
