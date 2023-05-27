@@ -8,16 +8,16 @@ interface ToolProps {
 const Tool: React.FC<ToolProps> = ({ link, icon, animation, name }) => {
   return (
     <a
-      className="btn btn-ghost btn-lg m-2 p-2 flex flex-col items-center justify-center rounded-box drop-shadow-xl hover:bg-neutral-focus hover:scale-150"
+      className="card m-2 p-2 flex flex-col items-center justify-center rounded-box drop-shadow-xl hover:scale-150"
       href={link}
       target="_blank"
       rel="noreferrer"
       data-aos={animation}
       data-aos-delay="750"
     >
-      <div className="tool flex flex-col items-center z-40">
+      <div className="tool flex flex-col items-center z-40 text-neutral">
         {icon}
-        <p className="tool-text text-sm bg-neutral text-neutral-content">{name}</p>
+        <p className="tool-text text-md bg-neutral text-neutral-content text-center whitespace-nowrap">{name}</p>
       </div>
     </a>
   );

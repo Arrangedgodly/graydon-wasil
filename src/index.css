@@ -22,3 +22,7 @@
 .tool:hover .tool-text {
   display: block;
 }
+
+.tool-text-active {
+  display: block;
+}

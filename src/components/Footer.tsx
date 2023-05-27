@@ -14,12 +14,42 @@ const Footer: React.FC<FooterProps> = ({ setTheme }) => {
       <div className="items-center grid-flow-col flex flex-col md:justify-self-center">
         <h3 className="text-lg font-bold">Themes</h3>
         <div className="menu menu-horizontal">
-          <button className="btn btn-xs btn-ghost rounded-box" onClick={() => setTheme('business')}>Business</button>
-          <button className="btn btn-xs btn-ghost rounded-box" onClick={() => setTheme('coffee')}>Coffee</button>
-          <button className="btn btn-xs btn-ghost rounded-box" onClick={() => setTheme('dark')}>Dark</button>
-          <button className="btn btn-xs btn-ghost rounded-box" onClick={() => setTheme('dracula')}>Dracula</button>
-          <button className="btn btn-xs btn-ghost rounded-box" onClick={() => setTheme('luxury')}>Luxury</button>
-          <button className="btn btn-xs btn-ghost rounded-box" onClick={() => setTheme('night')}>Night</button>
+          <button
+            className="btn btn-xs btn-ghost rounded-box"
+            onClick={() => setTheme("business")}
+          >
+            Business
+          </button>
+          <button
+            className="btn btn-xs btn-ghost rounded-box"
+            onClick={() => setTheme("coffee")}
+          >
+            Coffee
+          </button>
+          <button
+            className="btn btn-xs btn-ghost rounded-box"
+            onClick={() => setTheme("dark")}
+          >
+            Dark
+          </button>
+          <button
+            className="btn btn-xs btn-ghost rounded-box"
+            onClick={() => setTheme("dracula")}
+          >
+            Dracula
+          </button>
+          <button
+            className="btn btn-xs btn-ghost rounded-box"
+            onClick={() => setTheme("luxury")}
+          >
+            Luxury
+          </button>
+          <button
+            className="btn btn-xs btn-ghost rounded-box"
+            onClick={() => setTheme("night")}
+          >
+            Night
+          </button>
         </div>
       </div>
       <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">

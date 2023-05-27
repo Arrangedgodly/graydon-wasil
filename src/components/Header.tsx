@@ -1,34 +1,57 @@
-import HeaderLogo from "../assets/graydonwasil.png";
+import BusinessLogo from "../assets/gw-logo-business.png";
+import CoffeeLogo from "../assets/gw-logo-coffee.png";
+import DarkLogo from "../assets/gw-logo-dark.png";
+import DraculaLogo from "../assets/gw-logo-dracula.png";
+import LuxuryLogo from "../assets/gw-logo-luxury.png";
+import NightLogo from "../assets/gw-logo-night.png";
 import { hackerEffect } from "../scripts/hackerEffect";
 import { useEffect } from "react";
 
-const Header = () => {
+interface HeaderProps {
+  theme: string;
+}
+
+const Header: React.FC<HeaderProps> = ({ theme }) => {
   useEffect(() => {
-    const elements = document.querySelectorAll('.header_button');
+    const elements = document.querySelectorAll(".header_button");
     const handler = (e) => {
       hackerEffect(e);
     };
 
-    elements.forEach(element => {
-      element.addEventListener('mouseover', handler);
+    elements.forEach((element) => {
+      element.addEventListener("mouseover", handler);
     });
 
     return () => {
-      elements.forEach(element => {
-        element.removeEventListener('mouseover', handler);
+      elements.forEach((element) => {
+        element.removeEventListener("mouseover", handler);
       });
     };
-  }, []); 
+  }, []);
   return (
     <div className="navbar bg-base-300 fixed top-0 left-0 z-50">
       <div className="navbar-start"></div>
       <div className="navbar-center flex-col">
         <a
-          className="btn btn-ghost btn-lg rounded-box min-h-[6rem] italic font-bold"
+          className="btn btn-ghost btn-lg rounded-box min-h-[6rem] font-bold"
           href="/"
         >
           <img
-            src={HeaderLogo}
+            src={
+              theme === "business"
+                ? BusinessLogo
+                : theme === "coffee"
+                ? CoffeeLogo
+                : theme === "dark"
+                ? DarkLogo
+                : theme === "dracula"
+                ? DraculaLogo
+                : theme === "luxury"
+                ? LuxuryLogo
+                : theme === "night"
+                ? NightLogo
+                : BusinessLogo
+            }
             alt="GraydonWasil.com logo"
             className="max-w-[10rem]"
           />
