@@ -9,7 +9,7 @@ interface ProjectProps {
 const Project: React.FC<ProjectProps> = ({ image, name, desc, live, code }) => {
   return (
     <div
-      className="card w-96 drop-shadow-xl bg-secondary text-secondary-content rounded-lg"
+      className="card w-96 drop-shadow-xl bg-neutral text-neutral-content rounded-lg"
       data-aos="fade-up"
     >
       <figure data-aos='fade-right'>
@@ -27,7 +27,7 @@ const Project: React.FC<ProjectProps> = ({ image, name, desc, live, code }) => {
             View
           </a>
           <a
-            className="btn btn-accent rounded-xl"
+            className="btn btn-secondary rounded-xl"
             href={code}
             target="_blank"
           >
