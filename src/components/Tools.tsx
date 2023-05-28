@@ -36,13 +36,18 @@ const Tools = () => {
       // Reset all icons
       icons.forEach(icon => {
         icon.classList.remove('scale-150', 'text-neutral-content');
-        icon.querySelector('.tool-text').classList.remove('tool-text-active');
+        const toolText = icon.querySelector('.tool-text');
+        if (toolText) {
+          toolText.classList.remove('tool-text-active');
+        }
       });
 
       // Add the classes to the current icon and tooltip
       icons[index].classList.add('scale-150', 'text-neutral-content');
-      icons[index].querySelector('.tool-text').classList.add('tool-text-active');
-
+      const toolText = icons[index].querySelector('.tool-text');
+      if (toolText) {
+        toolText.classList.add('tool-text-active');
+      }
       index++;
       if (index >= icons.length) index = 0;
     }, 1000);

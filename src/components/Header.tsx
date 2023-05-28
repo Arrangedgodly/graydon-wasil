@@ -14,8 +14,12 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ theme }) => {
   useEffect(() => {
     const elements = document.querySelectorAll(".header_button");
-    const handler = (e) => {
-      hackerEffect(e);
+
+    //rewrite the handler hook to be typescript compatible
+    const handler = (e: Event) => {
+      const mouseEvent = e as MouseEvent;
+      const target = mouseEvent.target as HTMLButtonElement & { dataset: { value: string } };
+      hackerEffect({ ...mouseEvent, target });
     };
 
     elements.forEach((element) => {
