@@ -9,7 +9,7 @@ import "aos/dist/aos.css";
 import { useState, useEffect } from "react";
 
 const App = () => {
-  const [theme, setTheme] = useState("business");
+  const [theme, setTheme] = useState(localStorage.getItem('theme'));
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -26,6 +26,16 @@ const App = () => {
     window.addEventListener("scroll", refreshAOS);
 
     return () => window.removeEventListener("scroll", refreshAOS);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
+  useEffect(() => {
+    if (theme === null) {
+      setTheme("business");
+    }
   }, []);
 
   return (
