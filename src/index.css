@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+.header_button {
+  transition: all 0.3s ease-in-out;
+}
+
 .tool {
   position: relative;
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .tool:hover {
