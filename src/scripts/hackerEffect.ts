@@ -14,6 +14,7 @@ export const hackerEffect = (event: Event & { target: HTMLButtonElement & { data
         if(index < iteration) {
           return event.target.dataset.value[index];
         }
+        console.log(letter);
       
         return letters[Math.floor(Math.random() * 26)]
       })
