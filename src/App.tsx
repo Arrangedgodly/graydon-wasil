@@ -40,7 +40,7 @@ const App = () => {
     if (theme === null) {
       setTheme("business");
     }
-  }, []);
+  }, [theme]);
 
   return (
     <div

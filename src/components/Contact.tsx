@@ -1,9 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+
+  const handleForm = () => {
+    const data = { name, email, message };
+    console.log(data);
+  }
 
   return (
     <div
@@ -53,6 +58,9 @@ const Contact = () => {
             ></textarea>
           </label>
         </div>
+        <button className="btn btn-primary w-full max-w-md mt-4 mb-2" onClick={handleForm}>
+          Submit
+        </button>
       </div>
     </div>
   );

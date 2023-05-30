@@ -18,7 +18,9 @@ const Header: React.FC<HeaderProps> = ({ theme }) => {
     //rewrite the handler hook to be typescript compatible
     const handler = (e: Event) => {
       const mouseEvent = e as MouseEvent;
-      const target = mouseEvent.target as HTMLButtonElement & { dataset: { value: string } };
+      const target = mouseEvent.target as HTMLButtonElement & {
+        dataset: { value: string };
+      };
       hackerEffect({ ...mouseEvent, target });
     };
 
@@ -56,34 +58,34 @@ const Header: React.FC<HeaderProps> = ({ theme }) => {
                 : BusinessLogo
             }
             alt="GraydonWasil.com logo"
-            className="max-w-[10rem]"
+            className="md:max-w-[10rem] max-w-[8rem]"
           />
           .com
         </a>
-        <div className="menu menu-horizontal">
+        <div className="grid md:grid-cols-4 grid-cols-2">
           <a
-            className="btn btn-ghost md:btn-md btn-sm rounded-box m-2 hover:scale-125 hover:text-lg header_button"
+            className="btn btn-ghost md:btn-md btn-sm rounded-box m-2 md:hover:scale-125 hover:scale-150 hover:text-lg header_button"
             href="#projects"
             data-value="Projects"
           >
             Projects
           </a>
           <a
-            className="btn btn-ghost md:btn-md btn-sm rounded-box m-2 hover:scale-125 hover:text-lg header_button"
+            className="btn btn-ghost md:btn-md btn-sm rounded-box m-2 md:hover:scale-125 hover:scale-150 hover:text-lg header_button"
             href="#about"
             data-value="About"
           >
             About
           </a>
           <a
-            className="btn btn-ghost md:btn-md btn-sm rounded-box m-2 hover:scale-125 hover:text-lg header_button"
+            className="btn btn-ghost md:btn-md btn-sm rounded-box m-2 md:hover:scale-125 hover:scale-150 hover:text-lg header_button"
             href="#tools"
             data-value="Tools"
           >
             Tools
           </a>
           <a
-            className="btn btn-ghost md:btn-md btn-sm rounded-box m-2 hover:scale-125 hover:text-lg header_button"
+            className="btn btn-ghost md:btn-md btn-sm rounded-box m-2 md:hover:scale-125 hover:scale-150 hover:text-lg header_button"
             href="#contact"
             data-value="Contact"
           >
