@@ -17,7 +17,9 @@ const Tool: React.FC<ToolProps> = ({ link, icon, animation, name }) => {
     >
       <div className="tool flex flex-col items-center z-40 text-neutral">
         {icon}
-        <p className="tool-text text-md bg-neutral text-neutral-content text-center whitespace-nowrap">{name}</p>
+        <p className="tool-text md:text-md text-xs bg-neutral text-neutral-content text-center whitespace-nowrap">
+          {name}
+        </p>
       </div>
     </a>
   );

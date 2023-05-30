@@ -54,13 +54,13 @@ const Tools = () => {
   }, []);
   return (
     <div
-      className="flex flex-grow flex-col items-center justify-center h-screen"
+      className="flex flex-grow flex-col items-center justify-center h-screen segment"
       id="tools"
     >
       <h1 className="text-4xl font-bold p-4" data-aos="flip-right">
         Tools
       </h1>
-      <div className="grid grid-cols-5 gap-7">
+      <div className="grid md:grid-cols-5 grid-cols-3 md:gap-7 gap-4 max-w-[80vw]">
         <Tool
           icon={<SiTailwindcss size='3rem' className='hover:text-neutral-content' />}
           link="https://tailwindcss.com/"

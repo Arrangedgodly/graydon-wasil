@@ -7,7 +7,7 @@ const Contact = () => {
 
   return (
     <div
-      className="flex flex-grow flex-col items-center justify-center h-screen text-neutral-content"
+      className="flex flex-grow flex-col items-center justify-center h-screen text-neutral-content segment"
       id="contact"
     >
       <h1

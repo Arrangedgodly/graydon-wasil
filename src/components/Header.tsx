@@ -34,10 +34,9 @@ const Header: React.FC<HeaderProps> = ({ theme }) => {
   }, []);
   return (
     <div className="navbar bg-base-300 fixed top-0 left-0 z-50">
-      <div className="navbar-start"></div>
-      <div className="navbar-center flex-col">
+      <div className="navbar-center flex-col flex-grow">
         <a
-          className="btn btn-ghost btn-lg rounded-box min-h-[6rem] font-bold"
+          className="btn btn-ghost btn-lg rounded-box h-[6rem] font-bold"
           href="/"
         >
           <img
@@ -63,28 +62,28 @@ const Header: React.FC<HeaderProps> = ({ theme }) => {
         </a>
         <div className="menu menu-horizontal">
           <a
-            className="btn btn-ghost btn-md rounded-box m-2 hover:scale-125 hover:text-lg header_button"
+            className="btn btn-ghost md:btn-md btn-sm rounded-box m-2 hover:scale-125 hover:text-lg header_button"
             href="#projects"
             data-value="Projects"
           >
             Projects
           </a>
           <a
-            className="btn btn-ghost btn-md rounded-box m-2 hover:scale-125 hover:text-lg header_button"
+            className="btn btn-ghost md:btn-md btn-sm rounded-box m-2 hover:scale-125 hover:text-lg header_button"
             href="#about"
             data-value="About"
           >
             About
           </a>
           <a
-            className="btn btn-ghost btn-md rounded-box m-2 hover:scale-125 hover:text-lg header_button"
+            className="btn btn-ghost md:btn-md btn-sm rounded-box m-2 hover:scale-125 hover:text-lg header_button"
             href="#tools"
             data-value="Tools"
           >
             Tools
           </a>
           <a
-            className="btn btn-ghost btn-md rounded-box m-2 hover:scale-125 hover:text-lg header_button"
+            className="btn btn-ghost md:btn-md btn-sm rounded-box m-2 hover:scale-125 hover:text-lg header_button"
             href="#contact"
             data-value="Contact"
           >
@@ -92,7 +91,6 @@ const Header: React.FC<HeaderProps> = ({ theme }) => {
           </a>
         </div>
       </div>
-      <div className="navbar-end"></div>
     </div>
   );
 };

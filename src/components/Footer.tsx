@@ -7,13 +7,15 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = ({ setTheme }) => {
   return (
-    <footer className="footer grid grid-cols-3 items-center p-4 bg-base-300 fixed bottom-0 left-0 z-50">
-      <div className="items-center grid-flow-col">
-        <p>Copyright © 2023 Graydon Wasil - All right reserved</p>
+    <footer className="footer grid grid-cols-3 items-end content-center p-4 bg-base-300 fixed bottom-0 left-0 z-50">
+      <div className="grid-flow-col flex flex-col">
+        <p className="text-sm text-center overflow-auto whitespace-normal break-after-all max-w-3/4">
+          Copyright © 2023 Graydon Wasil - All right reserved
+        </p>
       </div>
-      <div className="items-center grid-flow-col flex flex-col md:justify-self-center">
+      <div className="items-center grid-flow-col flex flex-col justify-self-center">
         <h3 className="text-lg font-bold">Themes</h3>
-        <div className="menu menu-horizontal">
+        <div className="flex flex-wrap justify-center">
           <button
             className="btn btn-xs btn-ghost rounded-box"
             onClick={() => setTheme("business")}
@@ -52,16 +54,20 @@ const Footer: React.FC<FooterProps> = ({ setTheme }) => {
           </button>
         </div>
       </div>
-      <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-        <a href="https://github.com/Arrangedgodly/" target="_blank">
-          <button className="btn btn-ghost rounded-box">
-            <VscGithub size="2rem" />
-          </button>
+      <div className="grid-flow-col flex justify-center gap-2 justify-self-end">
+        <a
+          href="https://github.com/Arrangedgodly/"
+          target="_blank"
+          className="btn btn-sm btn-ghost rounded-box"
+        >
+          <VscGithub size="2rem" />
         </a>
-        <a href="https://www.linkedin.com/in/graydon-wasil/" target="_blank">
-          <button className="btn btn-ghost rounded-box">
-            <AiOutlineLinkedin size="2rem" />
-          </button>
+        <a
+          href="https://www.linkedin.com/in/graydon-wasil/"
+          target="_blank"
+          className="btn btn-sm btn-ghost rounded-box"
+        >
+          <AiOutlineLinkedin size="2rem" />
         </a>
       </div>
     </footer>

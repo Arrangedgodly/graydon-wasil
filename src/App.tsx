@@ -7,9 +7,13 @@ import Footer from "./components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useState, useEffect } from "react";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 const App = () => {
-  const [theme, setTheme] = useState(localStorage.getItem('theme'));
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") || "business"
+  );
+
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -44,10 +48,12 @@ const App = () => {
       data-theme={theme}
     >
       <Header theme={theme} />
+      <ParallaxProvider>
       <Projects />
       <About />
       <Tools />
       <Contact />
+      </ParallaxProvider>
       <Footer setTheme={setTheme} />
     </div>
   );

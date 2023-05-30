@@ -9,7 +9,7 @@ interface ProjectProps {
 const Project: React.FC<ProjectProps> = ({ image, name, desc, live, code }) => {
   return (
     <div
-      className="card w-96 drop-shadow-xl bg-neutral text-neutral-content rounded-2xl"
+      className="card max-w-md m-2 drop-shadow-xl bg-neutral text-neutral-content rounded-2xl"
       data-aos="fade-up"
     >
       <figure data-aos='fade-right'>
