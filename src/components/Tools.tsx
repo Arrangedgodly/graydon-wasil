@@ -57,7 +57,7 @@ const Tools = () => {
       className="flex flex-grow flex-col items-center justify-center h-screen segment"
       id="tools"
     >
-      <h1 className="text-4xl font-bold p-4" data-aos="flip-right">
+      <h1 className="text-5xl font-bold p-4" data-aos="flip-right">
         Tools
       </h1>
       <div className="grid md:grid-cols-5 grid-cols-3 md:gap-7 gap-4 max-w-[80vw]">

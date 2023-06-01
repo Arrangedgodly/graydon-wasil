@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "aos": "^2.3.4",
     "daisyui": "^2.51.6",
+    "emailjs-com": "^3.2.0",
     "firebase": "^9.22.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -19,7 +21,8 @@
     "react-router-dom": "^6.11.2",
     "react-scroll-parallax": "^3.4.2",
     "simple-parallax-js": "^5.6.2",
-    "theme-change": "^2.5.0"
+    "theme-change": "^2.5.0",
+    "txtanime.js": "^1.6.0"
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",

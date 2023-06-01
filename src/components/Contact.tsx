@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -6,9 +7,29 @@ const Contact = () => {
   const [message, setMessage] = useState("");
 
   const handleForm = () => {
-    const data = { name, email, message };
-    console.log(data);
-  }
+    emailjs
+      .send(
+        "graydonwasil.com",
+        "template_6ylng1i",
+        {
+          from_name: name,
+          reply_to: email,
+          message: message,
+        },
+        "b4sh8m9ouu6sNU3RX"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setName("");
+          setEmail("");
+          setMessage("");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
     <div
@@ -16,7 +37,7 @@ const Contact = () => {
       id="contact"
     >
       <h1
-        className="text-4xl font-bold p-4"
+        className="text-5xl font-bold p-4"
         data-aos="fade-down"
         data-aos-delay="1000"
       >
@@ -34,6 +55,7 @@ const Contact = () => {
               placeholder="John Doe"
               className="input input-bordered w-full max-w-md text-lg bg-nuetral-content"
               onChange={(e) => setName(e.target.value)}
+              value={name}
             />
           </label>
         </div>
@@ -45,6 +67,7 @@ const Contact = () => {
               placeholder="youremail@website.com"
               className="input input-bordered w-full max-w-md text-lg bg-nuetral-content"
               onChange={(e) => setEmail(e.target.value)}
+              value={email}
             />
           </label>
         </div>
@@ -55,10 +78,14 @@ const Contact = () => {
               placeholder="Message"
               className="textarea h-24 textarea-bordered w-full max-w-md text-lg bg-nuetral-content"
               onChange={(e) => setMessage(e.target.value)}
+              value={message}
             ></textarea>
           </label>
         </div>
-        <button className="btn btn-primary w-full max-w-md mt-4 mb-2" onClick={handleForm}>
+        <button
+          className="btn btn-primary w-full max-w-md mt-4 mb-2"
+          onClick={handleForm}
+        >
           Submit
         </button>
       </div>
