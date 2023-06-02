@@ -62,7 +62,7 @@ const Header: React.FC<HeaderProps> = ({ theme }) => {
           />
           .com
         </a>
-        <div className="grid md:grid-cols-4 grid-cols-2">
+        <div className="flex flex-row">
           <a
             className="btn btn-ghost md:btn-md btn-sm rounded-box m-2 md:hover:scale-125 hover:scale-150 hover:text-lg header_button"
             href="#projects"

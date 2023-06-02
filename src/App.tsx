@@ -44,15 +44,15 @@ const App = () => {
 
   return (
     <div
-      className="flex flex-col items-center min-h-screen p-0 scroll-smooth bg-base-300 text-neutral-content"
+      className="flex flex-col items-center min-h-screen p-0 scroll-smooth bg-base-300 text-neutral-content main-text"
       data-theme={theme}
     >
       <Header theme={theme} />
       <ParallaxProvider>
-      <Projects />
-      <About />
-      <Tools />
-      <Contact />
+        <Projects />
+        <About />
+        <Tools />
+        <Contact />
       </ParallaxProvider>
       <Footer setTheme={setTheme} />
     </div>
