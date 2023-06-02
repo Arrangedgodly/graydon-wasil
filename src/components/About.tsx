@@ -34,8 +34,8 @@ const About = () => {
         About Me
       </h1>
       <h2 className="text-2xl font-bold p-4" data-aos="fade-right">
-        I am a{" "}
-        <span className="roles text-4xl font-bold text-primary alt-text"></span>
+        I am a
+        <span className="roles text-4xl font-bold text-primary alt-text ml-2"></span>
       </h2>
       <p className="text-xl max-w-[50%] text-center p-4" data-aos="fade-right">
         I have a passion for learning and problem solving. I love to take an
