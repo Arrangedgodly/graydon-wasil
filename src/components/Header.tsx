@@ -35,7 +35,7 @@ const Header: React.FC<HeaderProps> = ({ theme }) => {
     };
   }, []);
   return (
-    <div className="navbar bg-base-300 fixed top-0 left-0 z-50">
+    <div className="navbar fixed top-0 left-0 z-50">
       <div className="navbar-center flex-col flex-grow">
         <a
           className="btn btn-ghost btn-lg rounded-box h-[6rem] font-bold"

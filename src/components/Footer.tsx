@@ -2,12 +2,12 @@ import { VscGithub } from "react-icons/vsc";
 import { AiOutlineLinkedin } from "react-icons/ai";
 
 interface FooterProps {
-  setTheme: (theme: string) => void;
+  handleThemeChange: (theme: string) => void;
 }
 
-const Footer: React.FC<FooterProps> = ({ setTheme }) => {
+const Footer: React.FC<FooterProps> = ({ handleThemeChange }) => {
   return (
-    <footer className="footer grid grid-cols-3 items-end content-center p-4 bg-base-300 fixed bottom-0 left-0 z-50">
+    <footer className="footer grid grid-cols-3 items-end content-center p-4 fixed bottom-0 left-0 z-50">
       <div className="grid-flow-col flex flex-col">
         <p className="text-sm text-center overflow-auto whitespace-normal break-after-all max-w-3/4">
           Copyright © 2023 Graydon Wasil - All right reserved
@@ -18,37 +18,37 @@ const Footer: React.FC<FooterProps> = ({ setTheme }) => {
         <div className="flex flex-wrap justify-center">
           <button
             className="btn btn-xs btn-ghost rounded-box"
-            onClick={() => setTheme("business")}
+            onClick={() => handleThemeChange("business")}
           >
             Business
           </button>
           <button
             className="btn btn-xs btn-ghost rounded-box"
-            onClick={() => setTheme("coffee")}
+            onClick={() => handleThemeChange("coffee")}
           >
             Coffee
           </button>
           <button
             className="btn btn-xs btn-ghost rounded-box"
-            onClick={() => setTheme("dark")}
+            onClick={() => handleThemeChange("dark")}
           >
             Dark
           </button>
           <button
             className="btn btn-xs btn-ghost rounded-box"
-            onClick={() => setTheme("dracula")}
+            onClick={() => handleThemeChange("dracula")}
           >
             Dracula
           </button>
           <button
             className="btn btn-xs btn-ghost rounded-box"
-            onClick={() => setTheme("luxury")}
+            onClick={() => handleThemeChange("luxury")}
           >
             Luxury
           </button>
           <button
             className="btn btn-xs btn-ghost rounded-box"
-            onClick={() => setTheme("night")}
+            onClick={() => handleThemeChange("night")}
           >
             Night
           </button>

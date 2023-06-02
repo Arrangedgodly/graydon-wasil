@@ -14,6 +14,14 @@ const App = () => {
     localStorage.getItem("theme") || "business"
   );
 
+  const mainContainer = document.querySelector(".main-text");
+
+  const handleThemeChange = (name: string) => {
+    mainContainer?.classList.remove(`bg-${theme}`)
+    setTheme(name);
+    mainContainer?.classList.add(`bg-${name}`)
+  };
+
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -44,7 +52,7 @@ const App = () => {
 
   return (
     <div
-      className="flex flex-col items-center min-h-screen p-0 scroll-smooth bg-base-300 text-neutral-content main-text"
+      className="flex flex-col items-center min-h-screen p-0 scroll-smooth bg-base-300 fill-base-100 text-neutral-content main-text bg-business"
       data-theme={theme}
     >
       <Header theme={theme} />
@@ -54,7 +62,7 @@ const App = () => {
         <Tools />
         <Contact />
       </ParallaxProvider>
-      <Footer setTheme={setTheme} />
+      <Footer handleThemeChange={handleThemeChange} />
     </div>
   );
 };
