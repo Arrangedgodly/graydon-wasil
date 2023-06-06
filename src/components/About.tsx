@@ -42,15 +42,16 @@ const About = () => {
         everyday struggle and convert it into a simple solution utilizing the
         coding methods and technologies I have learned.
       </p>
-      <h3 className="text-2xl font-bold p-4" data-aos="fade-up">
-        Github Stats
-      </h3>
-      <p data-aos="fade-up">
+      <div className="flex flex-col items-center" data-aos="fade-up">
         <img
-          src="https://github-readme-streak-stats.herokuapp.com/?user=arrangedgodly&"
+          src='https://github-readme-stats.vercel.app/api/top-langs/?username=arrangedgodly&layout=compact&theme=dark'
           alt="arrangedgodly"
         />
-      </p>
+        <img
+          src="https://github-readme-stats.vercel.app/api?username=arrangedgodly&show_icons=true&rank_icon=github&theme=dark&include_all_commits=true&count_private=true&hide=issues,contribs"
+          alt="arrangedgodly"
+        />
+      </div>
     </div>
   );
 };

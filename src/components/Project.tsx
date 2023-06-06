@@ -15,9 +15,9 @@ const Project: React.FC<ProjectProps> = ({ image, name, desc, live, code }) => {
       <figure data-aos='fade-right'>
         <img src={image} alt={name} className="md:w-3/4 w-full m-auto mt-4 rounded-2xl drop-shadow-xl" />
       </figure>
-      <div className="flex-col items-center justify-center p-2 m-2">
-        <h2 className="text-lg text-center font-bold p-2" data-aos='fade-down' data-aos-delay='1000'>{name}</h2>
-        <p className="text-sm text-center p-2" data-aos='fade-right' data-aos-delay='1000'>{desc}</p>
+      <div className="flex-col items-center justify-center p-2 mb-2">
+        <h2 className="text-lg text-center font-bold m-2" data-aos='fade-down' data-aos-delay='1000'>{name}</h2>
+        <p className="text-sm text-center m-2 mb-4" data-aos='fade-right' data-aos-delay='1000'>{desc}</p>
         <div className="flex gap-2 items-center justify-center" data-aos='fade-up' data-aos-delay='1000'>
           <a
             className="btn bg-base-100 rounded-xl hover:bg-secondary hover:text-secondary-content"
