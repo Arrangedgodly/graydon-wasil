@@ -5,7 +5,7 @@ interface ToolProps {
   name: string;
 }
 
-const Tool: React.FC<ToolProps> = ({ link, icon, animation, name }) => {
+const Tool = ({ link, icon, animation, name }: ToolProps) => {
   return (
     <a
       className="card m-2 p-2 flex flex-col items-center justify-center rounded-box drop-shadow-xl hover:scale-150"

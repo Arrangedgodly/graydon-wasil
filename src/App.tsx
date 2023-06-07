@@ -10,7 +10,7 @@ import { useState, useEffect } from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
 
 const App = () => {
-  const [theme, setTheme] = useState(
+  const [theme, setTheme] = useState<string>(
     localStorage.getItem("theme") || "business"
   );
 
@@ -68,12 +68,3 @@ const App = () => {
 };
 
 export default App;
-
-/*
-<Routes>
-        <Route path='/' element={<Projects />} />
-        <Route path='/projects' element={<Projects />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
-      </Routes>
-*/

@@ -11,7 +11,7 @@ interface HeaderProps {
   theme: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ theme }) => {
+const Header = ({ theme }: HeaderProps) => {
   useEffect(() => {
     const elements = document.querySelectorAll(".header_button");
 
