@@ -43,17 +43,36 @@ const About = () => {
         coding methods and technologies I have learned.
       </p>
       <div className="flex flex-col items-center" data-aos="fade-up">
-        <img
-          src='https://github-readme-stats.vercel.app/api/top-langs/?username=arrangedgodly&layout=compact&theme=dark'
-          alt="arrangedgodly"
-        />
-        <img
-          src="https://github-readme-stats.vercel.app/api?username=arrangedgodly&show_icons=true&rank_icon=github&theme=dark&include_all_commits=true&count_private=true&hide=issues,contribs"
-          alt="arrangedgodly"
-        />
+        <a
+          href="https://github-readme-stats.vercel.app/api/top-langs/?username=arrangedgodly&layout=compact&theme=dark"
+          target="_blank"
+        >
+          <img
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=arrangedgodly&layout=compact&theme=dark"
+            alt="arrangedgodly"
+          />
+        </a>
+        <a
+          href="https://github-readme-stats.vercel.app/api?username=arrangedgodly&show_icons=true&theme=dark&include_all_commits=true&count_private=true&hide=issues,contribs"
+          target="_blank"
+        >
+          <img
+            src="https://github-readme-stats.vercel.app/api?username=arrangedgodly&show_icons=true&theme=dark&include_all_commits=true&count_private=true&hide=issues,contribs"
+            alt="arrangedgodly"
+          />
+        </a>
       </div>
     </div>
   );
 };
 
 export default About;
+
+/*
+<a href="https://github-readme-stats.vercel.app/api/wakatime?username=arrangedgodly&theme=dark">
+        <img
+          src="https://github-readme-stats.vercel.app/api/wakatime?username=arrangedgodly&theme=dark"
+          alt="arrangedgodly"
+        />
+        </a>
+*/
