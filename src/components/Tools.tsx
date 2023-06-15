@@ -33,7 +33,6 @@ const Tools = () => {
     const icons = document.querySelectorAll('.tool');
     let index = 0;
     setInterval(() => {
-      // Reset all icons
       icons.forEach(icon => {
         icon.classList.remove('scale-150', 'text-neutral-content');
         const toolText = icon.querySelector('.tool-text');
@@ -42,7 +41,6 @@ const Tools = () => {
         }
       });
 
-      // Add the classes to the current icon and tooltip
       icons[index].classList.add('scale-150', 'text-neutral-content');
       const toolText = icons[index].querySelector('.tool-text');
       if (toolText) {

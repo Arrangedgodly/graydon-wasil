@@ -6,7 +6,7 @@ interface ProjectProps {
   code: string;
 }
 
-const Project: React.FC<ProjectProps> = ({ image, name, desc, live, code }) => {
+const Project = ({ image, name, desc, live, code }: ProjectProps) => {
   return (
     <div
       className="flex flex-col justify-center items-center md:w-96 w-3/4 m-2 drop-shadow-xl bg-neutral text-neutral-content rounded-2xl"

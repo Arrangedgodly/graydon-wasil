@@ -15,7 +15,6 @@ const Header = ({ theme }: HeaderProps) => {
   useEffect(() => {
     const elements = document.querySelectorAll(".header_button");
 
-    //rewrite the handler hook to be typescript compatible
     const handler = (e: Event) => {
       const mouseEvent = e as MouseEvent;
       const target = mouseEvent.target as HTMLButtonElement & {

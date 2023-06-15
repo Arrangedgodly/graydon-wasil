@@ -5,7 +5,7 @@ interface FooterProps {
   handleThemeChange: (theme: string) => void;
 }
 
-const Footer: React.FC<FooterProps> = ({ handleThemeChange }) => {
+const Footer = ({ handleThemeChange }: FooterProps) => {
   return (
     <footer className="footer grid grid-cols-3 items-end content-center p-4 fixed bottom-0 left-0 z-50">
       <div className="grid-flow-col flex flex-col">
