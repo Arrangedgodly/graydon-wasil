@@ -79,3 +79,7 @@
 .tool-text-active {
   display: block;
 }
+
+.segment {
+  position: relative;
+}

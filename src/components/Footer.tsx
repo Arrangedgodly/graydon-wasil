@@ -7,7 +7,7 @@ interface FooterProps {
 
 const Footer = ({ handleThemeChange }: FooterProps) => {
   return (
-    <footer className="footer grid grid-cols-3 items-end content-center p-4 fixed bottom-0 left-0 z-50">
+    <footer className="footer grid grid-cols-3 items-end content-center p-4 fixed bottom-0 left-0 z-50 w-screen">
       <div className="grid-flow-col flex flex-col">
         <p className="md:text-sm text-xs text-center overflow-auto whitespace-normal break-after-all max-w-3/4">
           Copyright © 2023 Graydon Wasil - All right reserved

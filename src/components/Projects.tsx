@@ -6,7 +6,7 @@ import Project from "./Project";
 const Projects = () => {
   return (
     <div
-      className="flex flex-grow flex-col items-center justify-center h-screen segment"
+      className="flex flex-grow flex-col items-center justify-center w-screen segment"
       id="projects"
     >
       <div className="carousel w-full max-w-[95vw]">

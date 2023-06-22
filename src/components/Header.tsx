@@ -34,7 +34,7 @@ const Header = ({ theme }: HeaderProps) => {
     };
   }, []);
   return (
-    <div className="navbar bg-base-300 fixed top-0 left-0 z-50">
+    <div className="navbar bg-base-300 fixed top-0 left-0 z-50 p-2 w-screen">
       <div className="flex flex-col flex-grow w-full">
         <a
           className="btn btn-ghost btn-lg rounded-box h-[6rem] font-bold"

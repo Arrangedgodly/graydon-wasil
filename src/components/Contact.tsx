@@ -33,11 +33,11 @@ const Contact = () => {
 
   return (
     <div
-      className="flex flex-grow flex-col items-center justify-center h-screen text-neutral-content segment"
+      className="flex flex-grow flex-col items-center justify-center h-screen w-screen text-neutral-content segment"
       id="contact"
     >
       <h1
-        className="text-5xl font-bold p-4"
+        className="md:text-5xl text-3xl font-bold p-4"
         data-aos="fade-down"
         data-aos-delay="1000"
       >
@@ -49,11 +49,11 @@ const Contact = () => {
       >
         <div className="form-control max-w-md" data-aos="fade-up">
           <label className="label flex-col">
-            <span className="label-text text-xl">Name</span>
+            <span className="label-text md:text-xl text-lg">Name</span>
             <input
               type="text"
               placeholder="John Doe"
-              className="input input-bordered w-full max-w-md text-lg bg-nuetral-content"
+              className="input input-bordered w-full max-w-md md:text-lg text-md bg-nuetral-content"
               onChange={(e) => setName(e.target.value)}
               value={name}
             />
@@ -61,11 +61,11 @@ const Contact = () => {
         </div>
         <div className="form-control max-w-md" data-aos="fade-left">
           <label className="label flex-col">
-            <span className="label-text text-xl">Email</span>
+            <span className="label-text md:text-xl text-lg">Email</span>
             <input
               type="text"
               placeholder="youremail@website.com"
-              className="input input-bordered w-full max-w-md text-lg bg-nuetral-content"
+              className="input input-bordered w-full max-w-md md:text-lg text-md bg-nuetral-content"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
             />
@@ -73,10 +73,10 @@ const Contact = () => {
         </div>
         <div className="form-control max-w-md" data-aos="fade-right">
           <label className="label flex-col">
-            <span className="label-text text-xl">Message</span>
+            <span className="label-text md:text-xl text-lg">Message</span>
             <textarea
               placeholder="Message"
-              className="textarea h-24 textarea-bordered w-full max-w-md text-lg bg-nuetral-content"
+              className="textarea h-24 textarea-bordered w-full max-w-md md:text-lg text-md bg-nuetral-content"
               onChange={(e) => setMessage(e.target.value)}
               value={message}
             ></textarea>
