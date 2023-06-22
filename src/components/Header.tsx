@@ -61,30 +61,30 @@ const Header = ({ theme }: HeaderProps) => {
           />
           .com
         </a>
-        <div className="grid grid-cols-2 md:grid-cols-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 md:text-lg text-sm">
           <a
-            className="btn btn-ghost md:btn-md btn-sm rounded-box m-2 md:hover:scale-125 hover:scale-150 hover:text-lg header_button"
+            className="btn btn-ghost md:btn-md btn-sm rounded-box md:m-2 m-1 md:hover:scale-125 hover:scale-150 hover:text-lg header_button"
             href="#projects"
             data-value="Projects"
           >
             Projects
           </a>
           <a
-            className="btn btn-ghost md:btn-md btn-sm rounded-box m-2 md:hover:scale-125 hover:scale-150 hover:text-lg header_button"
+            className="btn btn-ghost md:btn-md btn-sm rounded-box md:m-2 m-1 md:hover:scale-125 hover:scale-150 hover:text-lg header_button"
             href="#about"
             data-value="About"
           >
             About
           </a>
           <a
-            className="btn btn-ghost md:btn-md btn-sm rounded-box m-2 md:hover:scale-125 hover:scale-150 hover:text-lg header_button"
+            className="btn btn-ghost md:btn-md btn-sm rounded-box md:m-2 m-1 md:hover:scale-125 hover:scale-150 hover:text-lg header_button"
             href="#tools"
             data-value="Tools"
           >
             Tools
           </a>
           <a
-            className="btn btn-ghost md:btn-md btn-sm rounded-box m-2 md:hover:scale-125 hover:scale-150 hover:text-lg header_button"
+            className="btn btn-ghost md:btn-md btn-sm rounded-box md:m-2 m-1 md:hover:scale-125 hover:scale-150 hover:text-lg header_button"
             href="#contact"
             data-value="Contact"
           >

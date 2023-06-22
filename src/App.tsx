@@ -25,6 +25,9 @@ const App = () => {
   useEffect(() => {
     AOS.init({
       duration: 2000,
+      disable: "mobile",
+      debounceDelay: 50,
+      throttleDelay: 99,
       delay: 500,
       once: false,
       mirror: true,
@@ -52,7 +55,7 @@ const App = () => {
 
   return (
     <div
-      className="flex flex-col items-center min-h-screen p-0 scroll-smooth bg-base-300 fill-base-100 text-neutral-content main-text bg-business"
+      className="flex flex-col items-center min-h-screen p-0 scroll-smooth bg-base-300 fill-base-100 text-neutral-content main-text bg-business overflow-x-hidden"
       data-theme={theme}
     >
       <Header theme={theme} />
