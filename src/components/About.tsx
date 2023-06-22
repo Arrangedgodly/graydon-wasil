@@ -37,7 +37,7 @@ const About = () => {
         I am a
         <span className="roles md:text-4xl text-2xl font-bold text-primary alt-text ml-2"></span>
       </h2>
-      <p className="md:text-xl text-lg max-w-[80%] text-center p-4" data-aos="fade-right">
+      <p className="md:text-xl text-lg md:max-w-[55%] max-w-[80%] text-center p-4" data-aos="fade-right">
         I have a passion for learning and problem solving. I love to take an
         everyday struggle and convert it into a simple solution utilizing the
         coding methods and technologies I have learned.
@@ -54,11 +54,11 @@ const About = () => {
           />
         </a>
         <a
-          href="https://github-readme-stats.vercel.app/api?username=arrangedgodly&show_icons=true&theme=dark&include_all_commits=true&count_private=true&hide=issues,contribs"
+          href="https://github-readme-streak-stats.herokuapp.com/?user=arrangedgodly&theme=dark"
           target="_blank"
         >
           <img
-            src="https://github-readme-stats.vercel.app/api?username=arrangedgodly&show_icons=true&theme=dark&include_all_commits=true&count_private=true&hide=issues,contribs"
+            src="https://github-readme-streak-stats.herokuapp.com/?user=arrangedgodly&theme=dark"
             alt="arrangedgodly"
             className='w-[90%] mx-auto my-5'
           />

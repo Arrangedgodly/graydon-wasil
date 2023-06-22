@@ -23,8 +23,7 @@ const Footer = ({ handleThemeChange }: FooterProps) => {
         >
           Themes
         </h3>
-        {menuOpen && (
-          <div className="flex flex-wrap justify-center">
+          <div className={menuOpen ? "flex flex-wrap justify-center" : "hidden"}>
             <button
               className="btn btn-xs btn-ghost rounded-box"
               onClick={() => handleThemeChange("business")}
@@ -62,7 +61,6 @@ const Footer = ({ handleThemeChange }: FooterProps) => {
               Night
             </button>
           </div>
-        )}
       </div>
       <div className="grid-flow-col flex justify-center gap-2 justify-self-end">
         <a
