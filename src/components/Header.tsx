@@ -35,7 +35,7 @@ const Header = ({ theme }: HeaderProps) => {
   }, []);
   return (
     <div className="navbar bg-base-300 fixed top-0 left-0 z-50">
-      <div className="navbar-center flex-col flex-grow">
+      <div className="flex flex-col flex-grow w-full">
         <a
           className="btn btn-ghost btn-lg rounded-box h-[6rem] font-bold"
           href="/"
@@ -61,7 +61,7 @@ const Header = ({ theme }: HeaderProps) => {
           />
           .com
         </a>
-        <div className="flex flex-row">
+        <div className="grid grid-cols-2 md:grid-cols-4">
           <a
             className="btn btn-ghost md:btn-md btn-sm rounded-box m-2 md:hover:scale-125 hover:scale-150 hover:text-lg header_button"
             href="#projects"

@@ -9,12 +9,12 @@ const Footer = ({ handleThemeChange }: FooterProps) => {
   return (
     <footer className="footer grid grid-cols-3 items-end content-center p-4 fixed bottom-0 left-0 z-50">
       <div className="grid-flow-col flex flex-col">
-        <p className="text-sm text-center overflow-auto whitespace-normal break-after-all max-w-3/4">
+        <p className="md:text-sm text-xs text-center overflow-auto whitespace-normal break-after-all max-w-3/4">
           Copyright © 2023 Graydon Wasil - All right reserved
         </p>
       </div>
       <div className="items-center grid-flow-col flex flex-col justify-self-center">
-        <h3 className="text-lg font-bold">Themes</h3>
+        <h3 className="md:text-lg text-md font-bold">Themes</h3>
         <div className="flex flex-wrap justify-center">
           <button
             className="btn btn-xs btn-ghost rounded-box"
@@ -60,14 +60,14 @@ const Footer = ({ handleThemeChange }: FooterProps) => {
           target="_blank"
           className="btn btn-sm btn-ghost rounded-box"
         >
-          <VscGithub size="2rem" />
+          <VscGithub size="1.5rem" />
         </a>
         <a
           href="https://www.linkedin.com/in/graydon-wasil/"
           target="_blank"
           className="btn btn-sm btn-ghost rounded-box"
         >
-          <AiOutlineLinkedin size="2rem" />
+          <AiOutlineLinkedin size="1.5rem" />
         </a>
       </div>
     </footer>

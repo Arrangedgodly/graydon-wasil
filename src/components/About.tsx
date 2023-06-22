@@ -30,14 +30,14 @@ const About = () => {
       className="flex flex-grow flex-col items-center justify-center h-screen segment"
       id="about"
     >
-      <h1 className="text-5xl font-bold p-4" data-aos="fade-left">
+      <h1 className="md:text-5xl text-3xl font-bold p-4" data-aos="fade-left">
         About Me
       </h1>
-      <h2 className="text-2xl font-bold p-4" data-aos="fade-right">
+      <h2 className="md:text-2xl text-xl font-bold p-4" data-aos="fade-right">
         I am a
-        <span className="roles text-4xl font-bold text-primary alt-text ml-2"></span>
+        <span className="roles md:text-4xl text-2xl font-bold text-primary alt-text ml-2"></span>
       </h2>
-      <p className="text-xl max-w-[50%] text-center p-4" data-aos="fade-right">
+      <p className="md:text-xl text-lg max-w-[80%] text-center p-4" data-aos="fade-right">
         I have a passion for learning and problem solving. I love to take an
         everyday struggle and convert it into a simple solution utilizing the
         coding methods and technologies I have learned.
@@ -50,6 +50,7 @@ const About = () => {
           <img
             src="https://github-readme-stats.vercel.app/api/top-langs/?username=arrangedgodly&layout=compact&theme=dark"
             alt="arrangedgodly"
+            className='w-[90%] mx-auto my-5'
           />
         </a>
         <a
@@ -59,6 +60,7 @@ const About = () => {
           <img
             src="https://github-readme-stats.vercel.app/api?username=arrangedgodly&show_icons=true&theme=dark&include_all_commits=true&count_private=true&hide=issues,contribs"
             alt="arrangedgodly"
+            className='w-[90%] mx-auto my-5'
           />
         </a>
       </div>
