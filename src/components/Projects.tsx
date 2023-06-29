@@ -30,6 +30,13 @@ const ProjectData = [
 
 /*
 {
+  image: ,
+  name: "",
+  desc: "",
+  live: "",
+  code: ""
+},
+{
     image: AOLogo,
     name: "ArtOffishal",
     desc: "An art gallery and merch shop for ArtOffishal",
