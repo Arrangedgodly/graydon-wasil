@@ -1,6 +1,7 @@
 import Rhymepage from "../assets/rhymepage.png";
 import Rhymebook from "../assets/rhymebook.png";
 import VaultCounter from "../assets/vault-counter.png";
+import FreeCodeCamp from "../assets/freecodecamp.png";
 // import AOLogo from "../assets/ao-logo.png";
 import Project from "./Project";
 
@@ -8,23 +9,30 @@ const ProjectData = [
   {
     image: Rhymepage,
     name: "Rhymepage",
-    desc: "Version 2.0 of Rhymebook, a lyric writing application that writes your bars with you! Rebuilt with Vite, TailwindCSS, and DaisyUI",
+    desc: "Version 2.0 of Rhymebook, a lyric writing application that writes your bars with you! Rebuilt with Vite, TailwindCSS, DaisyUI and hosted via Google Firebase",
     live: "https://rhymepage.com",
     code: "https://github.com/Arrangedgodly/rhymebook-vite"
   },
   {
     image: Rhymebook,
     name: "Rhymebook",
-    desc: "The original iteration of an API powered lyric writing application that writes your bars with you!",
+    desc: "The original iteration of an API powered lyric writing application that writes your bars with you! Built with React, ChakraUI, MongoDB, and hosted via Google Cloud",
     live: "https://rhymebook.graydonwasil.com/",
     code: "https://github.com/Arrangedgodly/rhymebook-chakra",
   },
   {
     image: VaultCounter,
     name: "Vault Counter",
-    desc: "An application to make counting vaulted cash a breeze.",
+    desc: "An application to make counting vaulted cash a breeze. Built with React, MongoDB, and hosted via AWS",
     live: "https://vault.graydonwasil.com/",
     code: "https://github.com/Arrangedgodly/vault-vite",
+  },
+  {
+    image: FreeCodeCamp,
+    name: "Front End Libraries Projects",
+    desc: "A series of 5 projects done for the FreeCodeCamp Front End Libraries Certification. Built with Vite, React, and TailwindCSS",
+    live: "https://fcc.graydonwasil.com/",
+    code: "https://github.com/Arrangedgodly/fcc-portfolio"
   }
 ];
 
