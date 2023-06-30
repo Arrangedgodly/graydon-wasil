@@ -25,7 +25,7 @@ const ProjectData = [
     name: "Vault Counter",
     desc: "An application to make counting vaulted cash a breeze. Built with React, MongoDB, and hosted via AWS",
     live: "https://vault.graydonwasil.com/",
-    code: "https://github.com/Arrangedgodly/vault-vite",
+    code: "https://github.com/Arrangedgodly/vault-react",
   },
   {
     image: FreeCodeCamp,
