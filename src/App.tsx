@@ -58,6 +58,9 @@ const App = () => {
   useEffect(() => {
     ($ as any).scrollify({
       section: ".section",
+      scrollSpeed: 2000,
+      scrollbars: false,
+      updateHash: false,
     });
   }, []);
 
