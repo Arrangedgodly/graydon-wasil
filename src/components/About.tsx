@@ -27,10 +27,10 @@ const About = () => {
 
   return (
     <div
-      className="flex flex-grow flex-col items-center justify-center h-screen segment"
+      className="section flex flex-grow flex-col items-center justify-center h-screen segment"
       id="about"
     >
-      <h1 className="md:text-5xl text-3xl font-bold p-4" data-aos="fade-left">
+      <h1 className="md:text-5xl text-3xl font-bold p-4 mt-20" data-aos="fade-left">
         About Me
       </h1>
       <h2 className="md:text-2xl text-xl font-bold p-4" data-aos="fade-right">

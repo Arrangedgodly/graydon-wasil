@@ -56,7 +56,7 @@ const ProjectData = [
 const Projects = () => {
   return (
     <div
-      className="flex flex-grow flex-col items-center justify-center w-screen segment"
+      className="section flex flex-grow flex-col items-center justify-center w-screen segment"
       id="projects"
     >
       <div className="carousel w-full max-w-[95vw]">

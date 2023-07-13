@@ -33,7 +33,7 @@ const Contact = () => {
 
   return (
     <div
-      className="flex flex-grow flex-col items-center justify-center h-screen w-screen text-neutral-content segment"
+      className="section flex flex-grow flex-col items-center justify-center h-screen w-screen text-neutral-content segment"
       id="contact"
     >
       <h1

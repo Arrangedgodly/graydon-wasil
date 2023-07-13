@@ -15,6 +15,8 @@
     "daisyui": "^2.51.6",
     "emailjs-com": "^3.2.0",
     "firebase": "^9.22.0",
+    "jquery": "^3.7.0",
+    "jquery-scrollify": "^1.0.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
@@ -26,6 +28,7 @@
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",
+    "@types/jquery": "^3.5.16",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.57.1",

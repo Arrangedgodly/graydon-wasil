@@ -8,6 +8,8 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useState, useEffect } from "react";
 import { ParallaxProvider } from "react-scroll-parallax";
+import $ from "jquery";
+import "jquery-scrollify";
 
 const App = () => {
   const [theme, setTheme] = useState<string>(
@@ -17,9 +19,9 @@ const App = () => {
   const mainContainer = document.querySelector(".main-text");
 
   const handleThemeChange = (name: string) => {
-    mainContainer?.classList.remove(`bg-${theme}`)
+    mainContainer?.classList.remove(`bg-${theme}`);
     setTheme(name);
-    mainContainer?.classList.add(`bg-${name}`)
+    mainContainer?.classList.add(`bg-${name}`);
   };
 
   useEffect(() => {
@@ -52,6 +54,12 @@ const App = () => {
       setTheme("business");
     }
   }, [theme]);
+
+  useEffect(() => {
+    ($ as any).scrollify({
+      section: ".section",
+    });
+  }, []);
 
   return (
     <div

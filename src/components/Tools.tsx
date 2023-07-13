@@ -52,7 +52,7 @@ const Tools = () => {
   }, []);
   return (
     <div
-      className="flex flex-grow flex-col items-center justify-center h-screen segment w-screen"
+      className="section flex flex-grow flex-col items-center justify-center h-screen segment w-screen"
       id="tools"
     >
       <h1 className="md:text-5xl text-3xl font-bold p-4" data-aos="flip-right">
